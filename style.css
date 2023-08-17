@@ -1,16 +1,16 @@
 :root {
-    --default-bg-color: maroon;
+    --default-body-color: maroon;
     color: white;
 }
 
 body {
-    background-color: var(--default-bg-color);
+    background-color: var(--default-body-color);
     transition: background-color 1s;
 }
 
 .weather-container {
     background-color: var(--default-bg-color);
-    transition: background-color 1;
+    transition: background-color 1s;
     width: 100%;
         height: 80vh;
         display: flex;
@@ -45,9 +45,9 @@ body {
 }
 
 .weather-stormy {
-    --default-bg-color: #6a5acd;
+    --default-bg-color: #31219a;
     background-color: var(--default-bg-color);
-    color: #251e51;
+    color: white;
 }
 
 /* body{

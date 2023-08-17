@@ -94,9 +94,10 @@ function updateDetails(tempC, tempF, locationName, time, condition, iconCode) {
 
     const weatherIconClass = getWeatherIconClass(iconCode);
     document.querySelector(".weather-icon").className = weatherIconClass;
-    
+
+    // Remove existing weather classes and add new one
+    document.body.classList.remove("weather-sunny", "weather-cloudy", "weather-rainy", "weather-stormy");
     const bgColorClass = getBackgroundColor(iconCode);
-    document.body.classList = "";
     document.body.classList.add(bgColorClass);
 }
 
