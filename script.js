@@ -65,7 +65,7 @@ function getBackgroundColor(iconCode) {
 
 form.addEventListener('submit', searchForLocation);
 
-let target = 'kigali';
+let target = '';
 
 const getResults = async (targetLocation) => {
     let url = `http://api.weatherapi.com/v1/current.json?key=de70283a75ff48e5a68162855231708&q=${targetLocation}&aqi=no`;
