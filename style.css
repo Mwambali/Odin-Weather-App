@@ -30,21 +30,25 @@ body {
 .weather-sunny {
     --default-bg-color: #ffca3a;
     background-color: var(--default-bg-color);
+    color: maroon;
 }
 
 .weather-cloudy {
     --default-bg-color: #b0c4de;
     background-color: var(--default-bg-color);
+    color: darkgreen;
 }
 
 .weather-rainy {
     --default-bg-color: #5f9ea0;
     background-color: var(--default-bg-color);
+    color: darkred;
 }
 
 .weather-stormy {
     --default-bg-color: #6a5acd;
     background-color: var(--default-bg-color);
+    color: #ffca3a;
 }
 
 /* body{
