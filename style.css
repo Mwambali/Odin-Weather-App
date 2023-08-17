@@ -1,19 +1,62 @@
-*{
-    margin: 0%;
-    padding: 0;
+:root {
+    --default-bg-color: maroon;
 }
+
+body {
+    background-color: var(--default-bg-color);
+    transition: background-color 0.5s;
+}
+
+.weather-container {
+    background-color: var(--default-bg-color);
+    transition: background-color 0.5s;
+    width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+}
+
+
+.weather-description {
+    margin: 0.5rem;
+    margin-left: 0.2rem;
+}
+
+/* Weather conditions and their styles */
+.weather-sunny {
+    --default-bg-color: #ffca3a;
+    background-color: var(--default-bg-color);
+}
+
+.weather-cloudy {
+    --default-bg-color: #b0c4de;
+    background-color: var(--default-bg-color);
+}
+
+.weather-rainy {
+    --default-bg-color: #5f9ea0;
+    background-color: var(--default-bg-color);
+}
+
+.weather-stormy {
+    --default-bg-color: #6a5acd;
+    background-color: var(--default-bg-color);
+}
+
+/* body{
+    background-color: maroon;
+} */
 
 .container {
     width: 100%;
     height: 100vh;
-    background-color: maroon;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.weather-container {
-    color: white;
 }
 
 .temp {
@@ -22,6 +65,7 @@
 
 .time-location {
     font-size: 2rem;
+    text-align: center;
 }
 
 .condition{
@@ -30,17 +74,34 @@
 }
 
 nav{
-    height: 100px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px ;
+    padding-right: 20px;
+
+}
+nav div button {
+        padding: 0.5rem;
+            background-color: white;
+            margin: auto;
+            font-size: 1.1rem;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.2)
 }
 
 .search-area{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     outline: none;
     border: none;
-    color: black;
+    color: white;
     background-color: transparent;
-    font-size: 1.1rem;
-    border-bottom: 2px solid white;
+    font-size: 0.8rem;
+    border-bottom: 1px solid lightgrey;
 
 }
 
@@ -48,8 +109,33 @@ nav form button {
     padding: 0.5rem;
     background-color: white;
     margin-top: 1rem;
+    margin-left: 2rem;
     font-size: 1.1rem;
     outline: none;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 8px 16px 8px rgba(0, 0, 0, 0.2)
+}
+
+.temperature-toggle {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.fahrenheit-btn,
+.celsius-btn {
+    background-color: white;
+    margin-right: 0.5rem;
+    padding: 0.2rem 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-size: 0.8rem;
+}
+
+.weather-icon {
+    font-size: 2rem;
+    margin-right: 0.5rem;
 }

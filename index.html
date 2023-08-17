@@ -5,37 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
 </head>
 <body>
 
     <nav>
         <form>
             <input type="text" class="search-area" placeholder="Enter Location ...">
-            <button type="submit"> Search </button>
+            <button type="submit" class="search-button"> Search </button>
         </form>
+
+        <div class="temperature-toggle">
+            <button class="fahrenheit-btn">Fahrenheit</button>
+            <button class="celsius-btn">Celsius</button>
+        </div>
     </nav>
     
-    <div class="container">
-
-        <div class="weather-container">
-            <div class="temp">
-             <p> 20 </p>
-            </div>
-            
-            <div class="time-location">
-                <p> Kigali </p>
-                <p> 12:58 - Monday 2023-09-26 </p>
-            </div>
-
-            <div class="condition">
-                <p></p>
-
-                <p>Mist</p>
-            </div>
+    <div class="weather-container">
+        <div class="temp">
+            <p class="temperature">20</p>
         </div>
 
+        <div class="time-location">
+            <p class="location">Kigali</p>
+            <span class="time">12:58 - Monday 2023-09-26</span>
+        </div>
+
+        <div class="condition">
+            <i class="weather-icon"></i>
+            <p class="weather-description"></p>
+        </div>
     </div>
 
 </body>
+    <script src="./script.js"></script>
+
 </html>
