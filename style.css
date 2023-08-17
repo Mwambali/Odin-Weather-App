@@ -77,12 +77,13 @@ body {
 }
 
 nav{
-    height: 50px;
+    height: 80px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     padding-left: 20px ;
     padding-right: 20px;
+    border-bottom: 1px solid black;
 
 }
 nav div button {
